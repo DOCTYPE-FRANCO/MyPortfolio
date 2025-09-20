@@ -1,4 +1,11 @@
 import React from "react";
+import HTML from "./assets/html.png"
+import CSS from "./assets/css.png"
+import JS from "./assets/js.png"
+import TAILWIND from "./assets/tailwind.png"
+import REACT from "./assets/react-BzCHfcRJ.png"
+import JAVA from "./assets/java.png"
+import SPRING from "./assets/spring.png"
  function Stack(){
     return(
         <div className="flex flex-col justify-center items-center gap-5 mt-40 " id="Stack">

@@ -41,49 +41,49 @@ function Stack(){
                     className="mySwiper w-full max-w-6xl mt-10"
                 >
                     <SwiperSlide>
-                        <div className=" flex flex-col bg-white w-[150px] h-[150px]  md:w-[250px] md:h-[250px] items-center justify-center rounded-xl">
+                        <div className=" flex flex-col bg-white w-[100px] h-[100px]  md:w-[250px] md:h-[250px] items-center justify-center rounded-xl p-2">
                         <img src={HTML} className="w-[80px] flex justify-center items-center" />
                         <p className="font-bold">HTML</p>
                         </div>
                     </SwiperSlide>
 
                     <SwiperSlide>
-                        <div className="flex flex-col bg-white w-[150px] h-[150px] md:w-[250px] md:h-[250px] items-center justify-center rounded-xl gap-1 ">
+                        <div className="flex flex-col bg-white w-[100px] h-[100px] md:w-[250px] md:h-[250px] items-center justify-center rounded-xl gap-1 p-2">
                         <img src={CSS} className="w-[80px]" />
                         <p className="font-bold">CSS</p>
                         </div>
                     </SwiperSlide>
 
                     <SwiperSlide>
-                        <div className="flex flex-col bg-white w-[150px] h-[150px] md:w-[250px] md:h-[250px] items-center justify-center rounded-xl gap-1 ">
+                        <div className="flex flex-col bg-white w-[100px] h-[100px] md:w-[250px] md:h-[250px] items-center justify-center rounded-xl gap-1 p-2">
                         <img src={JS} className="w-[80px]" />
                         <p className="font-bold">Javascript</p>
                         </div>
                     </SwiperSlide>
 
                     <SwiperSlide>
-                        <div className="flex flex-col bg-white w-[150px] h-[150px] md:w-[250px] md:h-[250px] items-center justify-center rounded-xl gap-3 ">
+                        <div className="flex flex-col bg-white w-[100px] h-[100px] md:w-[250px] md:h-[250px] items-center justify-center rounded-xl gap-3 ">
                         <img src={TAILWIND} className="w-[80px]" />
                         <p className="font-bold">Tailwind CSS</p>
                         </div>
                     </SwiperSlide>
 
                     <SwiperSlide>
-                        <div className="flex flex-col bg-white w-[150px] h-[150px] md:w-[250px] md:h-[250px] items-center justify-center rounded-xl gap-1 ">
+                        <div className="flex flex-col bg-white w-[100px] h-[100px] md:w-[250px] md:h-[250px] items-center justify-center rounded-xl gap-1 p-2">
                         <img src={REACT} className="w-[80px]" />
                         <p className="font-bold">React</p>
                         </div>
                     </SwiperSlide>
 
                     <SwiperSlide>
-                        <div className="flex flex-col bg-white w-[150px] h-[150px] md:w-[250px] md:h-[250px] items-center justify-center rounded-xl gap-1">
+                        <div className="flex flex-col bg-white w-[100px] h-[100px] md:w-[250px] md:h-[250px] items-center justify-center rounded-xl gap-1 p-2">
                         <img src={JAVA} className="w-[80px]" />
                         <p className="font-bold">Java</p>
                         </div>
                     </SwiperSlide>
 
                     <SwiperSlide>
-                        <div className="flex flex-col bg-white w-[150px] h-[150px] md:w-[250px] md:h-[250px] items-center justify-center rounded-xl gap-1 mr-4">
+                        <div className="flex flex-col bg-white w-[100px] h-[100px] md:w-[250px] md:h-[250px] items-center justify-center rounded-xl gap-1 mr-4 p-2">
                         <img src={SPRING} className="flex  w-[80px] md:w-[150px] justify-center" />
                         <p className="font-bold">SpringBoot</p>
                         </div>

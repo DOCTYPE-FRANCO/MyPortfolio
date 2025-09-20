@@ -4,8 +4,8 @@ import Pic from "./assets/pic.jpg"
 function Herosection(){
     return(
         <div className="md:mt-30 flex flex-col  justify-center items-center gap-30 md:flex-row md:items-center md:justify-center" >
-                <div className="flex flex-col justify-center items-center gap-5 text-center">
-                    <h1 className="text-white text-5xl font-bold px-60 py-10 md:px-3 md:py-10">Hi, I'm <br/><span className="block max-w-[400px]">Uchenna Emeh</span></h1>
+                <div className="flex flex-col justify-center items-center gap-5 text-center  mt-7 md:mt-0">
+                    <h1 className="text-white text-5xl font-bold px-10 py-10 md:px-3 md:py-10">Hi, I'm <br/><span className="block mt-5 md:mt-0 w-[400px]">Uchenna Emeh</span></h1>
                     <TypeWriter
                         options={{
                             strings: ['Frontend Developer', 'Backend Developer', 'Fullstack Developer'],

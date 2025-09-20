@@ -1,35 +1,77 @@
-import React from "react";
+import React, {useState} from "react";
 import Mail from "./assets/mail.svg";
 import Linked from "./assets/linked.svg";   
 import Whatsapp from "./assets/whatsapp.svg";
 
 function Contact(){
+    const [formData, setFormData] = useState({
+        name: "",
+        email: "",
+        message: ""
+    });
+
+    function handleChange(e){
+        const {name, value} = e.target;
+        setFormData(prev => ({
+            ...prev,
+            [name] : value
+        }));
+    }
+
+    function handleSubmit(e){
+        e.preventDefault()
+        setFormData({name : "", email: "", message: ""})
+    }
+
     return(
-        <div className="flex flex-col justify-center items-center gap-5 mt-40" id="Contact">
+        <div className="flex flex-col justify-center items-center gap-5 mt-40 mb-10" id="Contact">
             <h2 className="text-white font-bold text-4xl">
                 Get In Touch
             </h2>
 
-            <div className="flex flex-col md:flex md:flex-row gap-10 mt-10 ">
-                <div className="bg-white w-[200px] h-[200px] rounded-3xl relative bottom-0 hover:bottom-6  transition-all duration-500">
-                    <div className="flex flex-col justify-center items-center gap-7">
-                        <img src={Mail} className="h-[60px] w-[60px]"/>
-                        <p>ufrancis186@gmail.com</p>
-                    </div>
-                </div>
-                <div className="bg-white w-[200px] h-[200px] rounded-3xl relative bottom-0 hover:bottom-6  transition-all duration-500">
-                    <div className="flex flex-col justify-center items-center gap-7">
-                        <img  src={Whatsapp} className="h-[60px] w-[60px]"/>
-                        <p>+234-812-036-2926</p>
-                    </div>
-                </div>
-                <div className="bg-white w-[200px] h-[200px] rounded-3xl relative bottom-0 hover:bottom-6  transition-all duration-500">
-                    <div className="flex flex-col justify-center items-center gap-7">
-                        <img src={Linked} className="h-[60px] w-[60px]" />
-                        <p>Uchenna-Emeh</p>
-                    </div>
-                </div>
+            <div className="bg-white w-[300px] h-[390px] md:w-[600px] md:h-[390px] rounded-2xl ">
+                <form onSubmit={handleSubmit} className="flex flex-col justify-center items-center mt-5 gap-2">
+                    <label className="flex flex-col font-bold">
+                        Name
+                        <input
+                            type="text"
+                            name="name"
+                            value={formData.name}
+                            placeholder="Enter your name"
+                            onChange={handleChange}
+                            className="flex justify-center items-center border md:w-[350px] w-[250px] h-[50px] rounded-xs pl-5"
+                        />  
+                    </label>
+
+                    <label className="flex flex-col font-bold">
+                        E-mail
+                        <input
+                            type="email"
+                            name="email"
+                            value={formData.email}
+                            placeholder="eg. youremail@gmail.com"
+                            onChange={handleChange}
+                            className="flex justify-center items-center border md:w-[350px] w-[250px] h-[50px] rounded-xs pl-5"
+                        />  
+                    </label>
+
+                    <label className="flex flex-col font-bold">
+                        Message
+                        <input
+                            type="text"
+                            name="message"
+                            value={formData.message}
+                            placeholder="Write us a message"
+                            onChange={handleChange}
+                            className="flex border md:w-[350px] w-[250px] h-[100px] rounded-xs pl-5"
+                        />  
+                    </label>
+
+                    <button className="font-bold m-2 text-white bg-black hover:text-black hover:bg-gray-400 px-6 py-3 md:px-8 rounded-full active:bg-gray-600">Send</button>
+                </form>
             </div>
+
+            
         </div>
     );
 }

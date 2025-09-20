@@ -7,14 +7,24 @@ function Navbar() {
 
   const [mobile, setMobile] = useState(false);
   return (
-    <div className="absolute top-0 left-0 w-full h-[50px] bg-transperent overflow-hidden">
-      <div className="flex justify-center items-center h-full">
-        <ul className="hidden md:flex gap-8 text-white">
-          <li><a href="#Header" className="cursor-pointer hover:text-gray-600 font-bold">Home</a></li>
-          <li><a href="#Stack" className="cursor-pointer hover:text-gray-600 font-bold">Stack</a></li>
-          <li><a href="#Project" className="cursor-pointer hover:text-gray-600 font-bold">Projects</a></li>
-          <li><a href="#Contact" className="cursor-pointer hover:text-gray-600 font-bold">Get In Touch</a></li>
-        </ul>
+    <div className="fixed bg-black top-0 left-0 w-full h-[50px] bg-transperent overflow-hidden">
+
+      <div className="flex justify-between items-center h-full">
+        <div className="ml-10">
+          <a href="#Header"><p className="text-white font-extrabold text-2xl">UCHENNA</p></a>
+        </div>
+        <div>
+          <ul className="hidden md:flex gap-8 text-white">
+            <li><a href="#Header" className="cursor-pointer hover:text-gray-600 font-bold">Home</a></li>
+            <li><a href="#Stack" className="cursor-pointer hover:text-gray-600 font-bold">Stack</a></li>
+            <li><a href="#Project" className="cursor-pointer hover:text-gray-600 font-bold">Projects</a></li>
+            <li><a href="#Contact" className="cursor-pointer hover:text-gray-600 font-bold">Get In Touch</a></li>
+          </ul>
+        </div>
+
+        <div>
+          
+        </div>
 
         <div className="md:hidden flex justify-end w-full mt-3 mr-3">
           <img src={Menu} onClick={()=> setMobile(true)} className="w-[40px]"/>

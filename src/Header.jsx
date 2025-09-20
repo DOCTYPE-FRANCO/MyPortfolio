@@ -23,7 +23,7 @@ function Header(){
                     />
                         
                 
-                    <p className="text-white max-w-85">Skilled developer dedicated to building efficient solutions, writing clean and maintainable code, and solving complex problems with creativity and precision.</p>
+                    <p className="text-white max-w-85 md:max-w-90 font-bold">I’m a Full-Stack Developer who loves bringing ideas to life on the web. I work with HTML, CSS, JavaScript, Tailwind CSS, and React JS on the Frontend to build clean, responsive, and user-friendly interfaces, whilst using Java's SpringBoot framework to write backend logic.</p>
                 </div>
                 <div>
                     <img src={Pic}  className="rounded-full w-[250px] object-cover md:w-[350px]"/>

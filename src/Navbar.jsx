@@ -30,15 +30,15 @@ function Navbar() {
           <img src={Menu} onClick={()=> setMobile(true)} className="w-[40px]"/>
         </div>
         { /*  Mobile View */}
-        <div className={`md:hidden  ${mobile ? "fixed w-full" : "w-0 h-0"} bg-white right-0 left-0 top-0 bottom-0  justify-center items-center`}>
+        <div className={`md:hidden  ${mobile ? "fixed w-full h-[300px] transition-all duration-500" : "w-0 h-0 transition-all duration-500"} bg-white right-0 left-0 top-0 bottom-0  justify-center items-center`}>
           <div className=" flex cursor-pointer w-full justify-end mb-10">
             <img src={X} onClick={()=> setMobile(false)} className="w-[50px]" />
           </div>
-          <ul className="flex flex-col  gap-9  font-bold text-2xl items-center justify-center">
-            <li onClick={() => setMobile(false)}><a href="#Header" className="cursor-pointer hover:text-gray-600 font-bold">Home</a></li>
-            <li onClick={() => setMobile(false)}><a href="#Stack" className="cursor-pointer hover:text-gray-600 font-bold">Stack</a></li>
-            <li onClick={() => setMobile(false)}><a href="#Project" className="cursor-pointer hover:text-gray-600 font-bold">Projects</a></li>
-            <li onClick={() => setMobile(false)}><a href="#Contact" className="cursor-pointer hover:text-gray-600 font-bold">Get In Touch</a></li>
+          <ul className="flex flex-col text-center  gap-2 font-bold text-2xl items-center justify-center w-full">
+            <li onClick={() => setMobile(false)} className="border-2 border-black font-bold w-[200px]"><a href="#Header">Home</a></li>
+            <li onClick={() => setMobile(false)} className="border-2 border-black font-bold w-[200px]"><a href="#Stack" >Stack</a></li>
+            <li onClick={() => setMobile(false)} className="border-2 border-black font-bold w-[200px]"><a href="#Project" >Projects</a></li>
+            <li onClick={() => setMobile(false)} className="border-2 border-black font-bold w-[200px]"><a href="#Contact" >Get In Touch</a></li>
           </ul>
         </div>
       </div>

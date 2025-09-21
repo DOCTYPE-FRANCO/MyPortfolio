@@ -1,4 +1,5 @@
 import React from "react";
+import {motion} from "motion/react"
 import TypeWriter from "typewriter-effect";
 import Pic from "./assets/pic.jpg"
 function Herosection(){
@@ -21,7 +22,12 @@ function Herosection(){
                     <p className="text-white max-w-85 md:max-w-90 font-bold">I’m a Full-Stack Developer who loves bringing ideas to life on the web. I work with HTML, CSS, JavaScript, Tailwind CSS, and React JS on the Frontend to build clean, responsive, and user-friendly interfaces, whilst using Java's SpringBoot framework to write backend logic.</p>
                 </div>
                 <div>
-                    <img src={Pic}  className="rounded-full w-[250px] object-cover md:w-[350px]"/>
+                    <motion.img
+                        initial= {{opacity:0, x:100}}
+                        animate={{opacity:1, x:0}}
+                        transition={{duration: 2}}
+                        src={Pic}
+                        className="rounded-full w-[250px] object-cover md:w-[350px]"/>
                 </div>
             </div>
     );

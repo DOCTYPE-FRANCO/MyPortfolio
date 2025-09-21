@@ -15,7 +15,7 @@ function Footer(){
                     </div>
                            
                     <div>
-                        <a href=""><img src={Whatsapp} className="w-[30px] hover:scale-125 transition-all duration-500"/></a>
+                        <a href="https://wa.me/2348120362926?text=Hello%20i%20got%20your%20number%20from%20your%20portfolio"><img src={Whatsapp} className="w-[30px] hover:scale-125 transition-all duration-500"/></a>
                     </div>
                         
                     <div>

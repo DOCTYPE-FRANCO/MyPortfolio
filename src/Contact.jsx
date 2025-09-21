@@ -1,4 +1,5 @@
 import React, {useState} from "react";
+import emailjs from "emailjs-com";
 import Mail from "./assets/mail.svg";
 import Linked from "./assets/linked.svg";   
 import Whatsapp from "./assets/whatsapp.svg";
@@ -20,8 +21,32 @@ function Contact(){
 
     function handleSubmit(e){
         e.preventDefault()
+        sendEmail(e);
         setFormData({name : "", email: "", message: ""})
     }
+
+    
+  function sendEmail(e) {
+    e.preventDefault();
+
+    emailjs
+      .send(
+        "service_vsh58jn",   // from EmailJS
+        "template_s8t2hec",  // from EmailJS
+        formData,
+        "QO3Bc1-skumtpIPBZ"    // from EmailJS
+      )
+      .then(
+        (result) => {
+          console.log("Success:", result.text);
+          alert("Message sent!");
+        },
+        (error) => {
+          console.log("Error:", error.text);
+          alert("Something went wrong!");
+        }
+      );
+  }
 
     return(
         <div className="flex flex-col justify-center items-center gap-5 mt-40 mb-10" id="Contact">

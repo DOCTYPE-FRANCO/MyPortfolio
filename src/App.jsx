@@ -4,6 +4,7 @@ import Stack from "./Stack.jsx";
 import Contact from './Contact.jsx';
 import Navbar from './Navbar.jsx';
 import Footer from './Footer.jsx';
+import Projects from './Projects.jsx';
 
 function App() {
 
@@ -12,6 +13,7 @@ function App() {
     <Navbar />
     <Header />
     <Stack />
+    <Projects />
     <Contact />
     <Footer />
     

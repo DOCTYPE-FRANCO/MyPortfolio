@@ -1,6 +1,6 @@
 import React from "react";
 import LekkiD from "./assets/LekkiD.png"
-import lekkip from "./assets/lekkip.png"
+import lekkip from "./assets/lekkiP.png"
 import LMSD from "./assets/LMSD.png"
 import LMSP from "./assets/LMSP.png"
 import ManiaD from "./assets/ManiaD.png"

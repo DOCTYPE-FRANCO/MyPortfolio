@@ -17,7 +17,7 @@ function Navbar() {
           <ul className="hidden md:flex gap-8 text-white">
             <li><a href="#Header" className="cursor-pointer hover:text-gray-600 font-bold">Home</a></li>
             <li><a href="#Stack" className="cursor-pointer hover:text-gray-600 font-bold">Stack</a></li>
-            <li><a href="#Project" className="cursor-pointer hover:text-gray-600 font-bold">Projects</a></li>
+            <li><a href="#Projects" className="cursor-pointer hover:text-gray-600 font-bold">Projects</a></li>
             <li><a href="#Contact" className="cursor-pointer hover:text-gray-600 font-bold">Get In Touch</a></li>
           </ul>
         </div>
@@ -37,7 +37,7 @@ function Navbar() {
           <ul className="flex flex-col text-center  gap-2 font-bold text-2xl items-center justify-center w-full">
             <li onClick={() => setMobile(false)} className="border-2 border-black font-bold w-[200px]"><a href="#Header">Home</a></li>
             <li onClick={() => setMobile(false)} className="border-2 border-black font-bold w-[200px]"><a href="#Stack" >Stack</a></li>
-            <li onClick={() => setMobile(false)} className="border-2 border-black font-bold w-[200px]"><a href="#Project" >Projects</a></li>
+            <li onClick={() => setMobile(false)} className="border-2 border-black font-bold w-[200px]"><a href="#Projects" >Projects</a></li>
             <li onClick={() => setMobile(false)} className="border-2 border-black font-bold w-[200px]"><a href="#Contact" >Get In Touch</a></li>
           </ul>
         </div>

@@ -35,8 +35,8 @@ function Navbar() {
             <img src={X} onClick={()=> setMobile(false)} className="w-[35px]" />
           </div>
           <ul className="flex flex-col text-center  gap-2 font-bold text-2xl items-center justify-center w-full">
-            <li onClick={() => setMobile(false)} className="border-2 border-black font-bold w-[200px]"><a href="#Header">Home</a></li>
-            <li onClick={() => setMobile(false)} className="border-2 border-black font-bold w-[200px]"><a href="#Stack" >Stack</a></li>
+            <li onClick={() => setMobile(false)} className="border-2 border-black font-bold w-[200px]"><a href="#Header" >Home</a></li>
+            <li onClick={() => setMobile(false)} className="border-2 border-black font-bold w-[200px]"><a href="#Stack">Stack</a></li>
             <li onClick={() => setMobile(false)} className="border-2 border-black font-bold w-[200px]"><a href="#Projects" >Projects</a></li>
             <li onClick={() => setMobile(false)} className="border-2 border-black font-bold w-[200px]"><a href="#Contact" >Get In Touch</a></li>
           </ul>

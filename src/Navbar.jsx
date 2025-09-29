@@ -27,12 +27,12 @@ function Navbar() {
         </div>
 
         <div className="md:hidden flex justify-end w-full mt-3 mr-3">
-          <img src={Menu} onClick={()=> setMobile(true)} className="w-[40px]"/>
+          <img src={Menu} onClick={()=> setMobile(true)} className="w-[30px]"/>
         </div>
         { /*  Mobile View */}
         <div className={`md:hidden  ${mobile ? "fixed w-full h-[300px] transition-all duration-500" : "w-0 h-0 transition-all duration-500"} bg-white right-0 left-0 top-0 bottom-0  justify-center items-center`}>
           <div className=" flex cursor-pointer w-full justify-end mb-10">
-            <img src={X} onClick={()=> setMobile(false)} className="w-[50px]" />
+            <img src={X} onClick={()=> setMobile(false)} className="w-[35px]" />
           </div>
           <ul className="flex flex-col text-center  gap-2 font-bold text-2xl items-center justify-center w-full">
             <li onClick={() => setMobile(false)} className="border-2 border-black font-bold w-[200px]"><a href="#Header">Home</a></li>

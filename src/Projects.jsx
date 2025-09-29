@@ -51,11 +51,11 @@ function Projects(){
                         transition={{duration: 2}}
                         className="flex flex-col justify-center items-center border border-white py-3 px-0 rounded-2xl"
                     >
-                        <div className="flex flex-row">
+                        <div className="flex flex-row mb-6">
                             <div>
-                                <img src={project.imgD} className="md:w-[300px] w-[150px]" />
+                                <img src={project.imgD} className="md:w-[300px] w-[350px]" />
                             </div>
-                            <div>
+                            <div className="md:block hidden">
                                 <img src={project.imgP} className="md:w-[150px] w-[70px]" />
                             </div>
                         </div>

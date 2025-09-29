@@ -70,7 +70,7 @@ function Projects(){
                                 </div>
 
                                 <div className="flex flex-row gap-2 cursor-pointer">
-                                    <a href={project.link} className="hover:text-gray-600 active:text-amber-50">View</a>
+                                    <a href={project.link} className="hover:text-gray-600 active:text-amber-50">View </a>
                                     <img src={Link} className="w-6 h-6 rounded-full" />
                                 </div>
                                 

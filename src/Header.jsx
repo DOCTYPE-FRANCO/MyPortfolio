@@ -7,7 +7,7 @@ import Herosection from "./Herosection.jsx";
 
 function Header(){
     return (
-        <div className="min-h-screen flex flex-col justify-center items-center overflow-hidden" id="Header">
+        <div className="min-h-screen flex flex-col justify-center items-center overflow-hidden z-40" id="Header">
             
             <Herosection />
             

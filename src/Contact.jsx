@@ -49,7 +49,7 @@ function Contact(){
   }
 
     return(
-        <div className="flex flex-col justify-center items-center gap-5 mt-40 mb-10" id="Contact">
+        <div className="z-50 flex flex-col justify-center items-center gap-5 mt-40 mb-10" id="Contact">
             <h2 className="text-white font-bold text-4xl">
                 Get In Touch
             </h2>

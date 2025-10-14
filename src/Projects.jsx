@@ -5,14 +5,26 @@ import LMSD from "./assets/LMSD.png"
 import LMSP from "./assets/LMSP.png"
 import ManiaD from "./assets/ManiaD.png"
 import ManiaP from "./assets/ManiaP.png"
+import ScrollD from "./assets/ScrollD.jpg"
+import ScrollP from "./assets/ScrollP.jpg"
 import {motion} from "motion/react"
 import Link from "./assets/lii.png"
 import Github from "./assets/Github.png"
 
 function Projects(){
     const projects = [
+
         {
             id: 1,
+            imgD : ScrollD,
+            imgP : ScrollP,
+            stack: "ReactJS + TailWindCSS + SpringBoot + MySql + Fly(Hosting Service)",
+            link : "https://scroll-zcx5.vercel.app/",
+            name : "Web Application for Accessing Past Questions"
+        },
+
+        {
+            id: 2,
             imgD : LekkiD,
             imgP : lekkip,
             stack: "ReactJS + TailWindCSS",
@@ -21,7 +33,7 @@ function Projects(){
         },
 
         {
-            id: 2,
+            id: 3,
             imgD : LMSD,
             imgP : LMSP,
             stack: "ReactJS + TailWindCSS + SpringBoot(Backend) + mySql(Database)",
@@ -30,7 +42,7 @@ function Projects(){
         },
 
         {
-            id: 3,
+            id: 4,
             imgD : ManiaD,
             imgP : ManiaP,
             stack: "ReactJS + TailWindCSS + SpringBoot",

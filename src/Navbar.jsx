@@ -10,7 +10,7 @@ function Navbar() {
   return (
     <div className="fixed shadow-white shadow-xs z-50 bg-blue-950 top-0 left-0 w-full h-[50px] bg-transperent overflow-hidden">
 
-      <div className="flex flex-row justify-between items-center h-full">
+      <div className="flex flex-row md:justify-around justify-between items-center h-full">
         <div className="pl-10">
           <a href="#Header"><p className="text-white font-extrabold text-2xl">UCHENNA</p></a>
         </div>

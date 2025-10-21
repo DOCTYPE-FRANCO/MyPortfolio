@@ -6,7 +6,7 @@ function Navbar() {
 
   const [mobile, setMobile] = useState(false);
   return (
-    <div className="fixed  z-50 bg-blue-950/90  top-0 left-0 w-full h-[50px] bg-transperent overflow-hidden">
+    <div className="fixed z-50 bg-blue-950/90  top-0 left-0 w-[85vw] h-[50px] bg-transperent overflow-hidden flex flex-col justify-center justify-self-center">
 
       <div className="flex flex-row md:justify-around justify-between items-center h-full">
         <div className="pl-10">

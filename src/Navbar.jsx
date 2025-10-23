@@ -6,7 +6,7 @@ function Navbar() {
 
   const [mobile, setMobile] = useState(false);
   return (
-    <div className="fixed z-50 top-4 left-1/2 -translate-x-1/2 w-[85vw] h-[50px] bg-blue-950/90 overflow-hidden flex flex-col justify-center rounded-md mx-auto">
+    <div className="fixed z-40 top-4 left-1/2 -translate-x-1/2 w-[85vw] h-[50px] bg-blue-950/90 overflow-hidden flex flex-col justify-center rounded-md mx-auto">
 
       <div className="flex flex-row md:justify-around justify-between items-center h-full">
         <div className="pl-10">
@@ -28,7 +28,7 @@ function Navbar() {
         </div>
 
         {mobile && (
-          <div className="fixed top-14 right-2.5 w-[150px] bg-blue-900/80 backdrop-blur-sm flex flex-col gap-7 py-4 justify-center items-center rounded-sm">
+          <div className=" fixed top-14 right-2.5 w-[150px] bg-black backdrop-blur-sm flex flex-col gap-7 py-4 justify-center items-center rounded-sm z-50">
             <li onClick={() => setMobile(false)} className="flex flex-row gap-1 text-white font-thin">
               <HomeIcon  color="#FFFFFF"/>
               <a href="#Header" >Home</a>
@@ -49,16 +49,7 @@ function Navbar() {
         )}
 
 
-        { /*  Mobile View */}
-        <div className={`hidden  ${mobile ? "fixed w-full h-[300px] transition-all duration-500" : "w-0 h-0 transition-all duration-500"} bg-blue-950 right-0 left-0 top-0 bottom-0  justify-center items-center`}>
-          <div className=" flex cursor-pointer w-full justify-between mb-10">
-            <p className="text-white font-thin text-3xl pl-3">MENU</p>
-            <XIcon onClick={()=> setMobile(false)} size={40} color="#FFFFFF" />
-          </div>
-          <ul className="flex flex-col gap-2 pl-10 font-bold text-2xl  w-full">
-
-          </ul>
-        </div>
+        
       </div>
     </div>
   );

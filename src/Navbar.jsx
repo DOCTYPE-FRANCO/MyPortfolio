@@ -6,7 +6,7 @@ function Navbar() {
 
   const [mobile, setMobile] = useState(false);
   return (
-    <div className="fixed z-40 top-4 left-1/2 -translate-x-1/2 w-[85vw] h-[50px] bg-blue-950/90 overflow-hidden flex flex-col justify-center rounded-md mx-auto">
+    <div className="fixed z-40 top-4 left-1/2 -translate-x-1/2 w-[85vw] h-[50px] bg-blue-950/90 overflow-visible flex flex-col justify-center rounded-md mx-auto">
 
       <div className="flex flex-row md:justify-around justify-between items-center h-full">
         <div className="pl-10">
@@ -28,7 +28,7 @@ function Navbar() {
         </div>
 
         {mobile && (
-          <div className=" fixed top-14 right-2.5 w-[150px] bg-black backdrop-blur-sm flex flex-col gap-7 py-4 justify-center items-center rounded-sm z-50">
+          <div className=" fixed top-14 right-2.5 w-[150px] bg-blue-950/80 backdrop-blur-sm flex flex-col gap-7 py-4 justify-center items-center rounded-sm z-50">
             <li onClick={() => setMobile(false)} className="flex flex-row gap-1 text-white font-thin">
               <HomeIcon  color="#FFFFFF"/>
               <a href="#Header" >Home</a>

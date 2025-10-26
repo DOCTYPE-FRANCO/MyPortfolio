@@ -8,7 +8,7 @@ function Navbar() {
   return (
     <div className="fixed z-40 top-4 left-1/2 -translate-x-1/2 w-[85vw] h-[50px] bg-blue-950/90 overflow-visible flex flex-col justify-center rounded-md mx-auto">
 
-      <div className="flex flex-row md:justify-around justify-between items-center h-full">
+      <div className="flex flex-row md:justify-around justify-between items-center h-full ">
         <div className="pl-10">
           <a href="#Header"><p className="text-white font-extrabold text-2xl">UCHENNA</p></a>
         </div>

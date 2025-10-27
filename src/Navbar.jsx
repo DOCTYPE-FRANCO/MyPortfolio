@@ -28,7 +28,7 @@ function Navbar() {
         </div>
 
         {mobile && (
-          <div className=" fixed top-14 right-2.5 w-[150px] bg-green-950/80 backdrop-blur-sm flex flex-col gap-7 py-4 justify-center items-center rounded-sm z-50">
+          <div className=" fixed top-14 right-2.5 w-[150px] bg-blue-950/80 backdrop-blur-sm flex flex-col gap-7 py-4 justify-center items-center rounded-sm z-50">
             <li onClick={() => setMobile(false)} className="flex flex-row gap-1 text-white font-thin">
               <HomeIcon  color="#FFFFFF"/>
               <a href="#Header" >Home</a>

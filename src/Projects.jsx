@@ -61,7 +61,7 @@ function Projects(){
                         initial={{opacity: 0, x:100}}
                         animate={{opacity:1, x:0}}
                         transition={{duration: 2}}
-                        className="flex flex-col justify-center items-center border border-white py-3 px-0 rounded-2xl"
+                        className="flex flex-col justify-center items-center border border-blue-700 py-3 px-0 rounded-2xl"
                     >
                         <div className="flex flex-row mb-6">
                             <div>

@@ -8,7 +8,7 @@ const MatrixBackground = () => {
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
 
-    const characters = "01";
+    const characters = "FR";
     const charArray = characters.split("");
     const fontSize = 14;
     const columns = canvas.width / fontSize;
@@ -19,7 +19,7 @@ const MatrixBackground = () => {
       ctx.fillStyle = "rgba(0, 0, 0, 0.05)";
       ctx.fillRect(0, 0, canvas.width, canvas.height);
 
-      ctx.fillStyle = "#00ff00";
+      ctx.fillStyle = "#0000ff";
       ctx.font = fontSize + "px monospace";
 
       for (let i = 0; i < drops.length; i++) {

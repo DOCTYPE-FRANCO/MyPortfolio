@@ -17,7 +17,7 @@ function Herosection(){
                             cursorClassName: "text-white md:text-4xl text-3xl font-bold"
                         }}
                     />
-                    <p className="text-gray-300 max-w-85 md:max-w-200 font-extrabold">I’m a Web Developer who loves bringing ideas to life on the web. I work with HTML, CSS, JavaScript, Tailwind CSS, and React JS on the Frontend to build clean, responsive, and user-friendly interfaces, whilst using Java's SpringBoot framework to write backend logic.</p>
+                    <p className="text-gray-300 max-w-85 md:max-w-200 font-extrabold">I’m a Web Developer who loves bringing ideas to life on the web. I work mainly with HTML, JavaScript, Tailwind CSS, and React JS on the Frontend to build clean, responsive, and user-friendly interfaces, whilst using Java's SpringBoot framework to write backend logic.</p>
                 </div>
                 
             </div>

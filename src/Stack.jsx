@@ -22,7 +22,7 @@ function Stack(){
     }
 
     return(
-        <div className="flex flex-col justify-center items-center gap-5 mt-40 z-50 " id="Stack">
+        <div className="flex flex-col justify-center items-center gap-5 mt-20 z-50 " id="Stack">
             <h2 className="text-white text-4xl font-bold">
                 Tech Stack
             </h2>

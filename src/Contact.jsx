@@ -15,7 +15,7 @@ function Contact(){
 
     useEffect(() =>{
         if(isInView){
-            mainControls.start("animate");
+            mainControls.start("visible");
         }
     }, [isInView]);
 
@@ -63,9 +63,10 @@ function Contact(){
                 visible: {opacity: 1, x: 0, transition: {duration: 1}}
             }}
             initial = "hidden"
-            animate
+            animate={mainControls}
             className="z-50 flex flex-col justify-center items-center gap-5 mt-40 mb-10" 
             id="Contact"
+            ref={ref}
         >
             <h2 className="text-white font-bold text-4xl">
                 Get In Touch

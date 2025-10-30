@@ -1,4 +1,5 @@
 import React, {useState, useRef, useEffect} from "react";
+import {motion, useAnimation, useInView} from "framer-motion"
 import emailjs from "emailjs-com";
 import Mail from "./assets/mail.svg";
 import Linked from "./assets/linked.svg";   

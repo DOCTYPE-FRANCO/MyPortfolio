@@ -6,6 +6,9 @@ import Linked from "./assets/linked.svg";
 import Whatsapp from "./assets/whatsapp.svg";
 
 function Contact(){
+    const ref = useRef(null);
+    const isInView = useInView(ref);
+    const mainControls = useAnimation();
     const [formData, setFormData] = useState({
         name: "",
         email: "",

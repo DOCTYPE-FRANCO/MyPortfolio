@@ -1,4 +1,4 @@
-import React, {useRef} from "react";
+import React, {useRef, useEffect} from "react";
 import LekkiD from "./assets/LekkiD.png"
 import lekkip from "./assets/lekkiP.png"
 import LMSD from "./assets/LMSD.png"
@@ -13,6 +13,7 @@ import Github from "./assets/Github.png"
 
 function Projects(){
     const ref = useRef(null);
+    const isInView = useInView(ref)
     const projects = [
 
         {

@@ -15,6 +15,12 @@ function Contact(){
         message: ""
     });
 
+    useEffect(() =>{
+        if(isInView){
+            mainControls.start("animate");
+        }
+    }, [isInView]);
+
     function handleChange(e){
         const {name, value} = e.target;
         setFormData(prev => ({

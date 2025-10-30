@@ -55,7 +55,7 @@ function Projects(){
     return(
         <div className="mt-10 z-50" id="Projects">
             <div className="mb-10"><h2 className="text-white font-bold text-center text-2xl md:text-3xl">Projects I Have Worked On</h2></div>
-            <div className="grid grid-cols-1 md:grid-cols-2 justify-center items-center gap-y-10 gap-x-5">
+            <div ref={ref} className="grid grid-cols-1 md:grid-cols-2 justify-center items-center gap-y-10 gap-x-5">
                 {projects.map((project) => (
                     <motion.div 
                         key={project.id}

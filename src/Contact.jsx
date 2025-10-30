@@ -50,7 +50,11 @@ function Contact(){
   }
 
     return(
-        <div className="z-50 flex flex-col justify-center items-center gap-5 mt-40 mb-10" id="Contact">
+        <motion.div 
+            
+            className="z-50 flex flex-col justify-center items-center gap-5 mt-40 mb-10" 
+            id="Contact"
+        >
             <h2 className="text-white font-bold text-4xl">
                 Get In Touch
             </h2>
@@ -98,7 +102,7 @@ function Contact(){
             </div>
 
             
-        </div>
+        </motion.div>
     );
 }
 

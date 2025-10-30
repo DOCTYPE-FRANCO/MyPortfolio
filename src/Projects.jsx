@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useRef} from "react";
 import LekkiD from "./assets/LekkiD.png"
 import lekkip from "./assets/lekkiP.png"
 import LMSD from "./assets/LMSD.png"
@@ -7,11 +7,12 @@ import ManiaD from "./assets/ManiaD.png"
 import ManiaP from "./assets/ManiaP.png"
 import ScrollD from "./assets/SCD.png"
 import ScrollP from "./assets/scrp.png"
-import {motion} from "motion/react"
+import {motion, useInView, useAnimation} from "framer-motion"
 import Link from "./assets/lii.png"
 import Github from "./assets/Github.png"
 
 function Projects(){
+    const ref = useRef(null);
     const projects = [
 
         {
@@ -58,9 +59,12 @@ function Projects(){
                 {projects.map((project) => (
                     <motion.div 
                         key={project.id}
-                        initial={{opacity: 0, x:100}}
-                        animate={{opacity:1, x:0}}
-                        transition={{duration: 2}}
+                        variants={{
+                            hidden: {opacity: 0, y: 75},
+                            visible: {opacity: 1, y: 0, transition: {duration: 0.4}}
+                        }}
+                        initial="hidden"
+                        animate="visible"
                         className="flex flex-col justify-center items-center border border-blue-700 py-3 px-0 rounded-2xl"
                     >
                         <div className="flex flex-row mb-6">

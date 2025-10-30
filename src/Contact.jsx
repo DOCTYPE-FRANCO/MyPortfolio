@@ -51,7 +51,12 @@ function Contact(){
 
     return(
         <motion.div 
-            
+            variants={{
+                hidden: {opacity: 0, x: 100},
+                visible: {opacity: 1, x: 0, transition: {duration: 1}}
+            }}
+            initial = "hidden"
+            animate
             className="z-50 flex flex-col justify-center items-center gap-5 mt-40 mb-10" 
             id="Contact"
         >

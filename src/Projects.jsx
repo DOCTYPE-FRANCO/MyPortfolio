@@ -70,7 +70,7 @@ function Projects(){
                         key={project.id}
                         variants={{
                             hidden: {opacity: 0, y: 75},
-                            visible: {opacity: 1, y: 0, transition: {duration: 1}}
+                            visible: {opacity: 1, y: 0, transition: {duration: 2}}
                         }}
                         initial="hidden"
                         animate={mainControls}

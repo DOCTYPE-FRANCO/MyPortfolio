@@ -13,7 +13,15 @@ import Github from "./assets/Github.png"
 
 function Projects(){
     const ref = useRef(null);
-    const isInView = useInView(ref)
+    const isInView = useInView(ref);
+    const mainControls = useAnimation();
+
+    useEffect(() =>{
+        if(isInView){
+            mainControls.start('visible')
+        }
+    }, [isInView]);
+
     const projects = [
 
         {
@@ -62,10 +70,10 @@ function Projects(){
                         key={project.id}
                         variants={{
                             hidden: {opacity: 0, y: 75},
-                            visible: {opacity: 1, y: 0, transition: {duration: 0.4}}
+                            visible: {opacity: 1, y: 0, transition: {duration: 1}}
                         }}
                         initial="hidden"
-                        animate="visible"
+                        animate={mainControls}
                         className="flex flex-col justify-center items-center border border-blue-700 py-3 px-0 rounded-2xl"
                     >
                         <div className="flex flex-row mb-6">

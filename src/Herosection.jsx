@@ -12,6 +12,9 @@ function Herosection(){
             mainControls.start("visible");
         }
     }, [isInView]);
+
+
+    
     return(
         <div className="md:mt-10 flex flex-col  justify-center items-center md:flex-row md:items-center md:justify-center z-30" >
                 <motion.div 

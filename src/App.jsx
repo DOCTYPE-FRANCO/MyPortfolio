@@ -11,7 +11,7 @@ function App() {
 
   return (
     
-    <div className="min-h-screen w-full relative mx-auto">
+    <div className="min-h-screen w-full relative mx-auto overflow-hidden">
         <MatrixBackground />
         {/* Your Content/Components */}
         <div className="relative z-10">

@@ -4,7 +4,7 @@ import TypeWriter from "typewriter-effect";
 import Pic from "./assets/pic.jpg"
 function Herosection(){
     const ref = useRef(null);
-    const isInView = useInView(ref);
+    const isInView = useInView(ref, {once: true});
     const mainControls = useAnimation();
 
     useEffect(() =>{

@@ -8,7 +8,7 @@ const MatrixBackground = () => {
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
 
-    const characters = "FR";
+    const characters = "01";
     const charArray = characters.split("");
     const fontSize = 14;
     const columns = canvas.width / fontSize;

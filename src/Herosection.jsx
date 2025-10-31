@@ -1,11 +1,22 @@
-import React from "react";
+import React, {useState, useRef} from "react";
 import {motion, useAnimate, useInView} from "framer-motion"
 import TypeWriter from "typewriter-effect";
 import Pic from "./assets/pic.jpg"
 function Herosection(){
+    const ref = useRef(null);
+    const isInView = useInView(ref);
+    const mainControls = useAnimate();
     return(
-        <div className="md:mt-10 flex flex-col  justify-center items-center  md:flex-row md:items-center md:justify-center z-30" >
-                <div className="flex flex-col justify-center items-center gap-5 text-center md:mt-0">
+        <div className="md:mt-10 flex flex-col  justify-center items-center md:flex-row md:items-center md:justify-center z-30" >
+                <motion.div 
+                    variants={{
+                        hidden: {opacity: 0, x: 100},
+                        visible: {opacity: 1, x: 0}
+                    }}
+                    initial="hidden"
+                    animate=
+                    className="flex flex-col justify-center items-center gap-5 text-center md:mt-0"
+                >
                     <h1 className="text-white text-5xl md:text-7xl font-extrabold px-10 py-10 md:px-3 md:py-10">Franco Emeh</h1>
                     <TypeWriter
                         options={{
@@ -18,7 +29,7 @@ function Herosection(){
                         }}
                     />
                     <p className="text-gray-300 max-w-85 md:max-w-200 font-extrabold">I’m a Web Developer who loves bringing ideas to life on the web. I work mainly with HTML, JavaScript, Tailwind CSS, and React JS on the Frontend to build clean, responsive, and user-friendly interfaces, whilst using Java's SpringBoot framework to write backend logic.</p>
-                </div>
+                </motion.div>
                 
             </div>
     );

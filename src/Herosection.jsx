@@ -14,7 +14,7 @@ function Herosection(){
                         visible: {opacity: 1, x: 0}
                     }}
                     initial="hidden"
-                    animate=
+                    animate={mainControls}
                     className="flex flex-col justify-center items-center gap-5 text-center md:mt-0"
                 >
                     <h1 className="text-white text-5xl md:text-7xl font-extrabold px-10 py-10 md:px-3 md:py-10">Franco Emeh</h1>

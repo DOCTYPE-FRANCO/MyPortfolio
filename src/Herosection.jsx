@@ -1,5 +1,5 @@
 import React from "react";
-import {motion} from "motion/react"
+import {motion, useAnimate, useInView} from "framer-motion"
 import TypeWriter from "typewriter-effect";
 import Pic from "./assets/pic.jpg"
 function Herosection(){

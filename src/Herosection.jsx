@@ -1,4 +1,4 @@
-import React, {useState, useRef} from "react";
+import React, {useState, useRef, useEffect} from "react";
 import {motion, useAnimate, useInView} from "framer-motion"
 import TypeWriter from "typewriter-effect";
 import Pic from "./assets/pic.jpg"
@@ -6,9 +6,16 @@ function Herosection(){
     const ref = useRef(null);
     const isInView = useInView(ref);
     const mainControls = useAnimate();
+
+    useEffect(() =>{
+        if (isInView) {
+            mainControls.start("visible");
+        }
+    }, [isInView]);
     return(
         <div className="md:mt-10 flex flex-col  justify-center items-center md:flex-row md:items-center md:justify-center z-30" >
                 <motion.div 
+                    ref = {ref}
                     variants={{
                         hidden: {opacity: 0, x: 100},
                         visible: {opacity: 1, x: 0}

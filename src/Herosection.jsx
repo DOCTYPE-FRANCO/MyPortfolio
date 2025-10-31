@@ -1,11 +1,11 @@
 import React, {useState, useRef, useEffect} from "react";
-import {motion, useAnimate, useInView} from "framer-motion"
+import {motion, useAnimation, useInView} from "framer-motion"
 import TypeWriter from "typewriter-effect";
 import Pic from "./assets/pic.jpg"
 function Herosection(){
     const ref = useRef(null);
     const isInView = useInView(ref);
-    const mainControls = useAnimate();
+    const mainControls = useAnimation();
 
     useEffect(() =>{
         if (isInView) {
@@ -18,7 +18,7 @@ function Herosection(){
                     ref = {ref}
                     variants={{
                         hidden: {opacity: 0, x: 100},
-                        visible: {opacity: 1, x: 0}
+                        visible: {opacity: 1, x: 0, transition: {duration: 1}},
                     }}
                     initial="hidden"
                     animate={mainControls}

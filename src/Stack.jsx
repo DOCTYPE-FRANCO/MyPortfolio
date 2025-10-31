@@ -29,7 +29,7 @@ function Stack(){
 
             
                 <Swiper
-                    spaceBetween={44}
+                    spaceBetween={54}
                     slidesPerView={3}
                     modules={[Autoplay, Pagination, Navigation]}  
                     pagination={{ clickable: true }}

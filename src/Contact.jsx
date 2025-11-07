@@ -94,7 +94,7 @@ function Contact(){
                             value={formData.email}
                             placeholder="eg. youremail@gmail.com"
                             onChange={handleChange}
-                            className="flex justify-center items-center border md:w-[350px] w-[250px] h-[50px] rounded-xs pl-5"
+                            className="flex justify-center items-center border md:w-[350px] w-[250px] h-[50px] rounded-full pl-5"
                         />  
                     </label>
 
@@ -106,7 +106,7 @@ function Contact(){
                             value={formData.message}
                             placeholder="Write us a message"
                             onChange={handleChange}
-                            className="flex border md:w-[350px] w-[250px] h-[100px] rounded-xs pl-5"
+                            className="flex border md:w-[350px] w-[250px] h-[100px] rounded-md pl-5 focus:outline-none focus:ring-0"
                         />  
                     </label>
 

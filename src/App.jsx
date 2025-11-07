@@ -6,6 +6,8 @@ import Navbar from './Navbar.jsx';
 import Footer from './Footer.jsx';
 import Projects from './Projects.jsx';
 import MatrixBackground from './MatrixBackground.jsx';
+import ParticleNetworkBackground from './ParticleNetwork.jsx';
+import MinimalMatrixBackground from './MinimalMatrix.jsx';
 
 function App() {
 

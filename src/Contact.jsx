@@ -82,7 +82,7 @@ function Contact(){
                             value={formData.name}
                             placeholder="Enter your name"
                             onChange={handleChange}
-                            className="flex justify-center items-center border md:w-[350px] w-[250px] h-[50px] rounded-xs pl-5"
+                            className="flex justify-center items-center border md:w-[350px] w-[250px] h-[50px] rounded-full pl-5"
                         />  
                     </label>
 

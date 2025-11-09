@@ -36,19 +36,24 @@ function WWM(){
                 <section className="flex flex-col gap-3 items-start justify-self-center mt-10">
                     <motion.div variants={variants2} className="flex flex-row gap-5">
                         <Goal color="#000000"/>
-                        <p className="text-black">Proven ability to engage and grow audiences</p>
+                        <p className="text-black">Problem-solving skills</p>
                     </motion.div>
 
 
                     <motion.div variants={variants2} className="flex flex-row gap-5">
                         <Goal color="#000000"/>
-                        <p className="text-black">Creative collaboration that aligns with your vision</p>
+                        <p className="text-black">Attention to detail</p>
                     </motion.div>
 
                     
                     <motion.div variants={variants2} className="flex flex-row gap-5">
                         <Goal color="#000000"/>
                         <p className="text-black">Professional and timely communication</p>
+                    </motion.div>
+
+                    <motion.div variants={variants2} className="flex flex-row gap-5">
+                        <Goal color="#000000"/>
+                        <p className="text-black">Willingness to learn</p>
                     </motion.div>
                 </section>
             </motion.section>

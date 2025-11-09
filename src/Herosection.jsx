@@ -30,7 +30,7 @@ function Herosection(){
                     <h1 className="text-white text-5xl md:text-7xl font-extrabold px-10 py-10 md:px-3 md:py-10">Franco Emeh</h1>
                     <TypeWriter
                         options={{
-                            strings: ['Software Developer', 'Web Developer', ],
+                            strings: ['Web Developer', 'Web 3 Developer', ],
                             autoStart: true,
                             loop: true,
                             deleteSpeed: 100,

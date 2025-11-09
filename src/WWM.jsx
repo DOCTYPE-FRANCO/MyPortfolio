@@ -26,35 +26,36 @@ function WWM(){
                     hidden:{opacity: 0},
                     visible: {opacity: 1, transition:{staggerChildren: 0.5}}
                 }}
-                className="flex flex-col justify-center items-center shadow-md shadow-blue-500 mt-20 mb-20 w-[80vw] md:w-[45vw] md:h-[280px] mx-auto rounded-md p-5 md:p-0 bg-white"
+                className="flex flex-col justify-center items-center shadow-md shadow-blue-500 mt-20 mb-20 w-[80vw] md:w-[45vw] md:h-[300px] mx-auto rounded-md p-5 md:p-0 bg-white"
             >
-                <motion.div variants={variants2} className="flex flex-row justify-center gap-3 mt-10">
+                <motion.div variants={variants2} className="flex flex-row justify-center gap-3 mt-10 font-extrabold">
                     <Target color="#000000" />
                     <p className="text-2xl font-bold text-black">Why Work with Me</p>
                 </motion.div>
 
-                <section className="flex flex-col gap-3 items-start justify-self-center mt-10">
+                <section className="flex flex-col gap-3 items-start justify-self-center mt-16">
                     <motion.div variants={variants2} className="flex flex-row gap-5">
                         <Goal color="#000000"/>
-                        <p className="text-black">Problem-solving skills</p>
+                        <p className="text-black font-bold">Problem-solving skills</p>
                     </motion.div>
 
 
                     <motion.div variants={variants2} className="flex flex-row gap-5">
                         <Goal color="#000000"/>
-                        <p className="text-black">Attention to detail</p>
+                        <p className="text-black font-bold">Attention to detail</p>
                     </motion.div>
 
                     
                     <motion.div variants={variants2} className="flex flex-row gap-5">
                         <Goal color="#000000"/>
-                        <p className="text-black">Professional and timely communication</p>
+                        <p className="text-black font-bold">Professional and timely communication</p>
                     </motion.div>
 
                     <motion.div variants={variants2} className="flex flex-row gap-5">
                         <Goal color="#000000"/>
-                        <p className="text-black">Willingness to learn</p>
+                        <p className="text-black font-bold">Willingness to learn</p>
                     </motion.div>
+
                 </section>
             </motion.section>
         </div>

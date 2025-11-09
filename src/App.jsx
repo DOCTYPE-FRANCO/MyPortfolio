@@ -8,6 +8,7 @@ import Projects from './Projects.jsx';
 import MatrixBackground from './MatrixBackground.jsx';
 import ParticleNetworkBackground from './ParticleNetwork.jsx';
 import MinimalMatrixBackground from './MinimalMatrix.jsx';
+import WWM from './WWM.jsx';
 
 function App() {
 
@@ -21,6 +22,7 @@ function App() {
           <Header />
           <Stack />
           <Projects />
+          <WWM />
           <Contact />
           <Footer />
         </div>

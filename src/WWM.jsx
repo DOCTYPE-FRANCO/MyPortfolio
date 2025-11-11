@@ -40,7 +40,7 @@ function WWM(){
                     hidden:{opacity: 0},
                     visible: {opacity: 1, transition:{staggerChildren: 0.5}}
                 }}
-                className="flex flex-col justify-center items-center shadow-md shadow-blue-500 mt-20 mb-20 w-[80vw] md:w-[45vw] md:h-[300px] rounded-md p-1 bg-white mx-auto"
+                className="flex flex-col justify-center items-center shadow-md shadow-blue-500 mt-20 mb-20 w-[80vw] md:w-[350px] md:h-[300px] rounded-md p-1 bg-white mx-auto"
             >
                 <motion.div variants={variants2} className="flex flex-row justify-center gap-3 mt-10 font-extrabold">
                     <Target color="#000000" />

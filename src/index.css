@@ -5,3 +5,8 @@
 html{
     scroll-behavior: smooth;
 }
+
+@theme {
+  --font-sans: "Fredoka", sans-serif;
+  --font-body: "Sono", sans-serif;
+}

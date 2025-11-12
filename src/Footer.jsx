@@ -6,7 +6,7 @@ import Whatsapp from "./assets/Whatsapp.png"
 function Footer(){
     return(
         <div className=" flex flex-col gap-4 w-full items-center justify-center text-center sticky top-full pt-10 pb-2.5">
-            <p className="text-white font-b">&copy; 2025 Uchenna Emeh. All rights reserved.</p>
+            <p className="text-white">&copy; 2025 Uchenna Emeh. All rights reserved.</p>
 
             <div className="flex flex-row gap-3 justify-center">
             

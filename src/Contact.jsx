@@ -110,7 +110,7 @@ function Contact(){
                         />  
                     </label>
 
-                    <button className="font-bold m-2 text-white bg-blue-900 hover:text-black hover:bg-gray-400 px-10 py-3 md:px-10 rounded-full active:bg-gray-600">Send</button>
+                    <button className="font-bold m-2 text-white bg-blue-900 hover:text-black hover:bg-gray-400 px-12 py-3 md:px-12 rounded-full active:bg-gray-600">Send</button>
                 </form>
             </div>
 

@@ -38,7 +38,7 @@ function Herosection(){
                             cursorClassName: "text-white md:text-4xl text-3xl font-bold"
                         }}
                     />
-                    <p className="text-gray-300 max-w-85 md:max-w-200 font-extrabold">I’m a Web Developer who loves bringing ideas to life on the web. I work mainly with HTML, JavaScript, Tailwind CSS, and React JS on the Frontend to build clean, responsive, and user-friendly interfaces, whilst using Java's SpringBoot framework to write backend logic.</p>
+                    <p className="text-gray-300 text-md max-w-85 md:max-w-200 font-extrabold">I’m a Full-Stack Web Developer skilled in building responsive and dynamic web applications. My frontend expertise includes React JS, Tailwind CSS, JavaScript, and HTML, while my backend work leverages Spring Boot for scalable and efficient APIs. In addition, I develop Web3 applications, utilizing Solidity and blockchain frameworks to integrate decentralized functionality into modern web experiences.</p>
                 </motion.div>
                 
             </div>

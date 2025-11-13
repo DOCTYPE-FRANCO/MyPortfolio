@@ -1,10 +1,11 @@
 import React, {useState} from "react";
 import { XIcon, HomeIcon, Laptop, Mail, Book, MenuIcon} from "lucide-react";
+import { motion, useAnimation, AnimatePresence } from "framer-motion";
 
 
 function Navbar() {
-
   const [mobile, setMobile] = useState(false);
+
   return (
     <div className="fixed z-40 top-4 left-1/2 -translate-x-1/2 w-[85vw] h-[50px] bg-blue-950/90 overflow-visible flex flex-col justify-center rounded-md mx-auto backdrop-blur-sm">
 
@@ -27,29 +28,34 @@ function Navbar() {
           {mobile ? <XIcon size={34}/> : <MenuIcon size={34}/>}
         </div>
 
-        {mobile && (
-          <div className=" fixed top-14 right-2.5 w-[150px] bg-blue-950/80 backdrop-blur-sm flex flex-col gap-7 py-4 justify-center items-center rounded-sm z-50">
-            <li onClick={() => setMobile(false)} className="flex flex-row gap-1 text-white font-thin">
-              <HomeIcon  color="#FFFFFF"/>
-              <a href="#Header" >Home</a>
-            </li>
-            <li onClick={() => setMobile(false)} className="flex flex-row gap-1 text-white font-thin">
-              <Laptop color="#FFFFFF"/>
-              <a href="#Stack">Stack</a>
-            </li>
-            <li onClick={() => setMobile(false)} className="flex flex-row gap-1 text-white font-thin">
-              <Book color="#FFFFFF"/>
-              <a href="#Projects" >Projects</a>
-            </li>
-            <li onClick={() => setMobile(false)} className="flex flex-row gap-1 text-white font-thin">
-              <Mail color="#FFFFFF"/>
-              <a href="#Contact" >Get In Touch</a>
-            </li>
-          </div>
-        )}
-
-
-        
+        <AnimatePresence mode="wait">
+          {mobile && (
+            <motion.div 
+              initial={{opacity: 0, y: -50}}
+              animate={{opacity: 1, y: 0}}
+              transition={{duration: 0.3}}
+              exit={{opacity: 0, y: -50}}
+              className=" fixed top-14 right-2.5 w-[150px] bg-blue-950/80 backdrop-blur-sm flex flex-col gap-7 py-4 justify-center items-center rounded-sm z-50"
+            >
+              <li onClick={() => setMobile(false)} className="flex flex-row gap-1 text-white font-thin">
+                <HomeIcon  color="#FFFFFF"/>
+                <a href="#Header" >Home</a>
+              </li>
+              <li onClick={() => setMobile(false)} className="flex flex-row gap-1 text-white font-thin">
+                <Laptop color="#FFFFFF"/>
+                <a href="#Stack">Stack</a>
+              </li>
+              <li onClick={() => setMobile(false)} className="flex flex-row gap-1 text-white font-thin">
+                <Book color="#FFFFFF"/>
+                <a href="#Projects" >Projects</a>
+              </li>
+              <li onClick={() => setMobile(false)} className="flex flex-row gap-1 text-white font-thin">
+                <Mail color="#FFFFFF"/>
+                <a href="#Contact" >Get In Touch</a>
+              </li>
+            </motion.div>
+          )}
+        </AnimatePresence>
       </div>
     </div>
   );

@@ -32,7 +32,7 @@ function WWM(){
 
     return(
         <div className="flex md:flex-row flex-col gap-5 mt-16">
-             <motion.section
+            <motion.section
                 initial="hidden"
                 animate={mainControls2}
                 ref={ref2}
